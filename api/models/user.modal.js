@@ -1,4 +1,3 @@
-import { timeStamp } from "console";
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
@@ -16,6 +15,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     unique: true
+  },
+  avatar: {
+    type: String,
+    default: 'https://en.m.wikipedia.org/wiki/File:Portrait_Placeholder.png'
   }
 },
   {
